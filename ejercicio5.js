@@ -1,5 +1,10 @@
 function drawX(num){
-    for(let i = 1; i <= num; i++){
+
+    if (num % 2 !== 0){
+        throw TypeError('El numero debe ser par')
+    }
+
+    for(let i = 0; i <= num; i++){
         for(let j = 0; j <= num; j++){
             if(i === j || i+j === num){
                 process.stdout.write("*");
@@ -10,4 +15,4 @@ function drawX(num){
         console.log("");
     }
 }
-drawX(10);
+drawX(4);
