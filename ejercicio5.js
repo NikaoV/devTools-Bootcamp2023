@@ -1,5 +1,5 @@
 function drawX(num){
-    for(let i = 0; i <= num; i++){
+    for(let i = 1; i <= num; i++){
         for(let j = 0; j <= num; j++){
             if(i === j || i+j === num){
                 process.stdout.write("*");
@@ -10,4 +10,4 @@ function drawX(num){
         console.log("");
     }
 }
-drawX(20);
+drawX(10);
